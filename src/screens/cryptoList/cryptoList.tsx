@@ -125,7 +125,7 @@ const CryptoList = () => {
         <Header headerTitle='Crypto List' />
         <View style={ styles.listView }>
           <FlatList
-           
+           showsVerticalScrollIndicator={false}
             data={ cryptoData }
             renderItem={ renderCryptoItem }
             keyExtractor={ ( item: any ) => item?.total_volume.toString() }
